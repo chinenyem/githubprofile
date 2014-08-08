@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset= "UTF-8">
+	<title> Githubunderscore </title>
+	<!-- /avatur url -->
+	<script type ="template/html" id="imageTmpl">
+		<% _.each(profilemyArr function(element, index, list) { %>
+
+				<img style="width:230px;" "length:230px;" src= " <%= element.avatar_url %>">
+				<% }); %>
+	</script>
+	<!-- /login -->
+	<script type="template/html" id="namesTmpl">
+		<%_.each(profilemyArr, function(element, index, list) { %>
+
+			<h2><% =element.login %></h2>
+		<a href= "<%= element.repos_url %>"><%=element.repos_url %></a>
+		<% }); %>
+	</script>
+ 	<!-- /followers url-->
+	<script type= "template/html" id="followersTmpl">
+		<%_.each(profilemyArr, function(element, index, list) { %>
+
+		<h2><% =element.followers %></h2>
+
+		<a href ="<%element.followers_url %>"><%element.followers_url %></a>
+		<% }); %>
+	</script>
+	<!-- /following url -->
+	<script type= "template/html" id="followingTmpl">
+		<%_.each(profilemyArr, function(element, index, list) { %>
+		<h2><% =element.following %></h2>
+		<a href ="<%element.following_url %>"><%element.following_url %></a>
+		<% }); %>
+	</script>
+	<!-- /Starred url -->
+	<script type= "template/html" id="starrTmpl">
+		<%_.each(profilemyArr, function(element, index, list) { %>
+		<a href ="<$element.starred_url $>" <$element.starred_url %></a>
+		<% }); %>
+	</script>
+	<!-- /created-at url -->
+	<script type= "templete/html" id="firstdayTmpl">
+		<%_.each(profilemyArr, function(element, index, list) { %>
+		<h2><% =element.created_at%></h2>
+		<% }); %>
+	</script>
+	<!-- /organization url -->
+	<script type= "template/html" id="organizeTmpl">
+		<%_.each(profilemyArr, function(element, index, list) { %>
+		<a href ="<%element.organization_url%>"<%element.organization_url %></a>
+		<% }); %>
+	</script>
+	<!-- /repository -->
+	<script type= "template/html" id="repoTmpl">
+		<%_.each(repoArr, function(element, index, list) { %>
+		<% }); %>
+	</script>
+	<!-- /Events-->
+<script type= "template/html" id="eventsTmpl">
+		<%_.each(eventsArr, function(element, index, list) { %>
+		<% }); %>
+	</script>
+
+</head>
+
+<body>
+<div id="container">
+	<aside> </aside>
+	<div class="tabs">
+		<ul>
+		<li><a href="/sectionone"> Section One </a> </li>
+		<li><a href="/sectiontwo"> Section Two </a> </li>
+		<ul>
+	</div>
+	<div class="sectionone"></div>
+	<div class="sectiontwo"></div>
+</div>
+<body>
+<script type = "text/javascript" src="underscore/underscore.js"></script>
+<script src= "jquery/dist/jquery.js"></script>
+<script src= "arrays.js"></script>
+<script type= "text/javascript" src="main.js"></script>
+</body>
+</html>
