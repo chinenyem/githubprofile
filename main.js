@@ -13,36 +13,46 @@ $(document).ready(function(){
 		},
 
 		initEvents: function(){
-			$(".sectionone").tabs(function(mouseover){
-				event.preventDefault();
-			});
-			$(".sectiontwo").tabs( function(mouseover){
-				event.preventDefault();
-			});
+
+
+			$(".one").click(function(event){
+          event.preventDefault();
+          $(".sectiontwo").addClass("sectiontwohidden");
+          $(".sectionone").removeClass("sectiontwohidden");
+      });
+         
+
+          $(".two").click(function(event){
+          event.preventDefault();
+          $(".sectiontwo").removeClass("sectiontwohidden");
+          $(".sectionone").addClass("sectiontwohidden");
+
+      });
 
 		},
 
 		render: function(template, data, $target) {
-			var tmpl =_.template(template, data);
+			var tmpl = _.template(template, data);
 
 			$target.append(tmpl);
 		},
 
 		renderProfile: function($target){
 			homePage.render($("#namesTmpl").html(), profilemyArr, $target);
-			homePage.render($("#followersTmpl").html(), profilemyArr, $target);
-			homePage.render($("#starrTmpl").html(), profilemyArr, $target);
-			homePage.render($("#firstdayTmpl").html(), profilemyArr, $target);
-			homePage.render($("#organizeTmpl").html(), profilemyArr, $target);
+			
 		},
 
 		renderRepo: function($target){
-			homepage.render($("#repoTmpl").html(), repoArr, $target);
+			homePage.render($("#repoTmpl").html(), repoArr, $target);
 		},
 
 		renderEvents: function($target){
-			homepage.render($("#eventsTmpl").html(), eventsArr, $target);
+			homePage.render($("#eventsTmpl").html(), eventsArr, $target);
 		},
+
+		renderPictures: function(){
+			homePage.render($("#namesTmpl").html(), profilemyArr, $(".pictures"));
+		}
 
 	 };
 

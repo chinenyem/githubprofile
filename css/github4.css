@@ -1,0 +1,208 @@
+#container {
+  position: relative; }
+
+header {
+  background-color: #666;
+  height: 10%; }
+
+.repotitle {
+  list-style-type: none;
+  margin-left: 13%;
+  margin-bottom: 0; }
+  .repotitle a {
+    text-decoration: none; }
+  .repotitle li {
+    display: inline;
+    margin-left: 5%;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    font-size: 20px;
+    color: #333333; }
+    .repotitle li .octicon {
+      margin-left: 10px;
+      margin-right: 10px; }
+  .repotitle li:hover {
+    color: #4183c4; }
+
+#bothsections {
+  margin-left: 33%;
+  margin-top: -36%; }
+  #bothsections .sectionone {
+    margin-left: -17%;
+    margin-top: 4%;
+    width: 90%; }
+  #bothsections .sectiontwohidden {
+    display: none; }
+  #bothsections .sectiontwo {
+    margin-left: -17%;
+    margin-top: -2%;
+    width: 90%;
+    padding-top: 0; }
+
+.therepocss .namerepo {
+  margin-top: 20px;
+  margin-bottom: 0; }
+  .therepocss .namerepo a {
+    text-decoration: none;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    color: #4183c4;
+    font-size: 20px;
+    margin-left: 16px;
+    font-weight: 700; }
+  .therepocss .namerepo a:hover {
+    text-decoration: underline; }
+  .therepocss .namerepo .bookimage {
+    height: 30px;
+    width: 20px;
+    padding-top: 10px; }
+.therepocss .updatedrepo {
+  margin-bottom: 20px;
+  margin-top: 4px;
+  margin-left: 40px; }
+  .therepocss .updatedrepo a {
+    text-decoration: none;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    font-size: bold, 11px;
+    color: #999999; }
+.therepocss .therepocssright {
+  position: absolute;
+  margin-left: 45%;
+  margin-top: -5%;
+  word-spacing: 10px; }
+  .therepocss .therepocssright .octicon {
+    margin-right: 1px;
+    color: #666; }
+  .therepocss .therepocssright .octicon:hover {
+    color: #4183c4; }
+  .therepocss .therepocssright a {
+    text-decoration: none;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    color: #666;
+    font-size: 14px;
+    font-weight: 700; }
+  .therepocss .therepocssright a:hover {
+    color: #4183c4; }
+
+.theeventscss {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  color: #4183c4;
+  font-size: 13px;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-weight: 550;
+  display: block;
+  margin-top: 4%; }
+  .theeventscss hr {
+    color: #666;
+    opacity: 0.1;
+    margin-bottom: 20px; }
+  .theeventscss p {
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    color: #666;
+    font-size: 13px;
+    margin-left: 8px;
+    margin-right: -1px;
+    font-weight: 550;
+    display: inline;
+    margin-top: 4%; }
+  .theeventscss .type {
+    color: #666; }
+  .theeventscss a {
+    text-decoration: none;
+    margin-left: 7px; }
+
+aside {
+  width: 80%; }
+  aside img {
+    width: 220px;
+    height: 220px;
+    border-radius: 10%;
+    margin-left: 4px; }
+  aside .loginasside h2 {
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    margin-left: 10px;
+    font-weight: 100;
+    color: #333333; }
+  aside .createdasside h4 {
+    margin-left: 7px;
+    font-weight: 100;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    color: #333333; }
+    aside .createdasside h4 .octicon {
+      margin-right: 10px; }
+  aside .loginasside h2 {
+    font-size: 30px;
+    color: #333333; }
+  aside h3 {
+    display: inline-block;
+    word-spacing: 25px;
+    margin-left: -2px;
+    color: #333333;
+    font-size: 2em;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0; }
+  aside h3:hover, aside p:hover {
+    color: #4183c4; }
+  aside .starredasside p, aside .followingaside p, aside .followersaside p {
+    display: block;
+    margin-top: 0;
+    padding-top: 0;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    margin-left: -2px;
+    font-weight: 200; }
+
+.Organieasside .orgimage {
+  height: 40px;
+  width: 40px;
+  margin-left: 2px;
+  border-radius: 10px; }
+.Organieasside h5 {
+  font-size: 1.5em;
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  margin-left: 5px;
+  margin-bottom: 10px; }
+
+.assidenumbers {
+  margin-top: 3px;
+  margin-left: 1%; }
+  .assidenumbers .followersaside, .assidenumbers .followingaside, .assidenumbers .starredasside {
+    display: inline-block;
+    margin-left: 8px; }
+
+footer {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  margin-top: 8%;
+  margin-bottom: 2%;
+  width: 1300px;
+  margin-left: 10%;
+  border-top-color-weight: solid, #666, 90; }
+  footer ul {
+    margin-bottom: 10%; }
+  footer .octicon {
+    margin-left: 15%; }
+  footer .leftfooter {
+    margin-left: 2%;
+    display: inline; }
+    footer .leftfooter li {
+      display: inline;
+      margin-left: 13px; }
+    footer .leftfooter li a {
+      text-decoration: none;
+      list-style-type: none;
+      color: #666; }
+    footer .leftfooter li a:hover {
+      color: #4183c4; }
+  footer .rightfooter {
+    margin-left: 13%;
+    display: inline; }
+    footer .rightfooter li {
+      display: inline;
+      margin-left: 13px; }
+    footer .rightfooter li a {
+      text-decoration: none;
+      list-style-type: none;
+      color: #666; }
+    footer .rightfooter li a:hover {
+      color: #4183c4; }

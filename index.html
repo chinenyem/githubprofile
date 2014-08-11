@@ -3,81 +3,146 @@
 <head>
 	<meta charset= "UTF-8">
 	<title> Githubunderscore </title>
-	<!-- /avatur url -->
-	<script type ="template/html" id="imageTmpl">
-		<% _.each(profilemyArr function(element, index, list) { %>
 
-				<img style="width:230px;" "length:230px;" src= " <%= element.avatar_url %>">
-				<% }); %>
-	</script>
-	<!-- /login -->
+	<link rel="stylesheet" href="css/github4.css">
+	 <link rel="stylesheet" href="CSS/octicons/octicons.css">
+	
+
+<div class="thescripts">
+
+
 	<script type="template/html" id="namesTmpl">
-		<%_.each(profilemyArr, function(element, index, list) { %>
+		<% _.each(profilemyArr, function(element, index, list) { %>
+<div id="assideall">
+		<img src= "<%= element.avatar_url %>">
 
-			<h2><% =element.login %></h2>
+		<div class="loginasside">
+		<strong><h2><%=element.login %></h2>
+		</div>
+
+
 		<a href= "<%= element.repos_url %>"><%=element.repos_url %></a>
-		<% }); %>
-	</script>
- 	<!-- /followers url-->
-	<script type= "template/html" id="followersTmpl">
-		<%_.each(profilemyArr, function(element, index, list) { %>
+		
+		<div class= "assidenumbers">
+			<div class="createdasside">
+				<h4><span class="octicon octicon-clock"></span><%=element.created_at%></h4>
+			</div>
 
-		<h2><% =element.followers %></h2>
+			<div class="followersaside">
+				<a href="https://github.com/chinenyem/followers"><h3><%=element.followers %></h3><p>Followers</p></a>
+			</div>
 
-		<a href ="<%element.followers_url %>"><%element.followers_url %></a>
+			<div class="followingaside">
+				<a href="https://github.com/chinenyem/following"><h3><%=element.following %></h3><p>Following</p></a>
+			</div>
+
+			<div class="starredasside">
+				<a href="https://github.com/stars"><h3><%=element.starred %></h3><p>Starred</p></a>
+			</div>
+
+		</div>
+		
+			<div class="Organieasside">
+				<h5>Organization</h5>
+				<a href ="<%=element.organization_url%>"<%=element.organization_url %></a>
+				<img src= "images/org.png" class="orgimage">
+				
+			</div>
+</div>
+
 		<% }); %>
 	</script>
-	<!-- /following url -->
-	<script type= "template/html" id="followingTmpl">
-		<%_.each(profilemyArr, function(element, index, list) { %>
-		<h2><% =element.following %></h2>
-		<a href ="<%element.following_url %>"><%element.following_url %></a>
-		<% }); %>
-	</script>
-	<!-- /Starred url -->
-	<script type= "template/html" id="starrTmpl">
-		<%_.each(profilemyArr, function(element, index, list) { %>
-		<a href ="<$element.starred_url $>" <$element.starred_url %></a>
-		<% }); %>
-	</script>
-	<!-- /created-at url -->
-	<script type= "templete/html" id="firstdayTmpl">
-		<%_.each(profilemyArr, function(element, index, list) { %>
-		<h2><% =element.created_at%></h2>
-		<% }); %>
-	</script>
-	<!-- /organization url -->
-	<script type= "template/html" id="organizeTmpl">
-		<%_.each(profilemyArr, function(element, index, list) { %>
-		<a href ="<%element.organization_url%>"<%element.organization_url %></a>
-		<% }); %>
-	</script>
-	<!-- /repository -->
+
+
 	<script type= "template/html" id="repoTmpl">
-		<%_.each(repoArr, function(element, index, list) { %>
-		<% }); %>
+
+		
+			<%_.each(repoArr, function(element, index, list) { %>
+		<div class="therepocss">
+		<hr>
+			<div class="namerepo">
+				<img src= "images/book.png" class="bookimage">
+				<a href=" <%=element.name%> "><%=element.name %> 
+			</div>
+
+			<div class="updatedrepo">
+			<a href=" <%=element.updated_at%> "><%=element.updated_at %>
+			</div>
+			<div class="therepocssright"
+			<a href=" <%=element.language%> "><%=element.language %>
+
+			 <span class="octicon octicon-star"></span> <span class=stargazersturnblue><a href=" <%=element.stargazers_count%> "><%=element.stargazers_count %></span>
+			<span class="octicon octicon-git-branch"></span><a href=" <%=element.forks%> "><%=element.forks %>
+			</div>
+		</div>
+			<% }); %>
 	</script>
-	<!-- /Events-->
-<script type= "template/html" id="eventsTmpl">
+
+
+	<script type= "template/html" id="eventsTmpl">
 		<%_.each(eventsArr, function(element, index, list) { %>
+		<div class="theeventscss">
+		<hr>
+			<a href=" <%=element.actor.login%> "><%=element.actor.login %>
+			<a href=" <%=element.type%> " class="type"><%=element.type %><p>at</p>
+			<a href=" <%=element.repo.name%> "><%=element.repo.name %>
+			<a href=" <%=element.payload.master_branch%> "><%=element.payload.master_branch %>
+			<a href=" <%=element.payload.action%> "><%=element.payload.action %>
+
+		</div>
 		<% }); %>
 	</script>
+
+
+</div>
 
 </head>
 
+
 <body>
+<header>
+	<submit>Name</submit>
+
+</header>
+
+<div class="titlescombine">
+
+	<ul class="repotitle">
+	<a href=""><li class="one" href=""><span class="octicon octicon-mark-github"></span>Repositories</li></a>
+	<a href=""><li class="two" ><span class="octicon octicon-rss"></span>Public activity</li></a>
+	</ul>
+
+</div>
 <div id="container">
 	<aside> </aside>
-	<div class="tabs">
-		<ul>
-		<li><a href="/sectionone"> Section One </a> </li>
-		<li><a href="/sectiontwo"> Section Two </a> </li>
-		<ul>
-	</div>
+
+<div id="bothsections">
 	<div class="sectionone"></div>
 	<div class="sectiontwo"></div>
 </div>
-<body>
+
+</div>
+<footer>
+<hr>
+	<ul class="leftfooter">
+		<li><a href="#"> &#169 2014 Github, Inc</a></li>
+		<li><a href="#"> Terms</a></li>
+		<li><a href="#"> Privacy </a></li>
+		<li><a href="#"> Security </a></li>
+	</ul>
+
+		<span class="octicon octicon-mark-github"></span>
+
+	<ul class="rightfooter">
+		<li><a href="#"> Status </a></li>
+		<li> <a href="#">API </a></li>
+		<li> <a href="#">Training </a></li>
+		<li> <a href="#">Shop </a></li>
+		<li> <a href="#">Blog </a></li>
+		<li> <a href="#">About </a></li>
+	</ul>
+
+</footer>
 <script type = "text/javascript" src="underscore/underscore.js"></script>
 <script src= "jquery/dist/jquery.js"></script>
 <script src= "arrays.js"></script>

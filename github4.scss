@@ -1,0 +1,374 @@
+$fontstack:  Helvetica, arial, freesans, clean, sans-serif;
+$font-sizeone: 30px;
+$font-sizetwo: 2em;
+$font-sizethree: 20px;
+$font-sizefour: 11px;
+$font-sizefive: 14px;
+$font-sizesix: 13px;
+$font-color: #333333;
+$font-colortwo: #4183c4;
+$font-colorthree: #999999;
+$font-colorfour: #666;
+
+
+
+#container{
+	position: relative;
+	}
+
+header{
+	background-color:$font-colorfour;
+	height: 10%;
+}
+
+.repotitle{
+	list-style-type:none;
+	margin-left: 13%;
+	margin-bottom: 0;
+
+	a{
+		text-decoration: none;
+	}
+
+	li{
+		display: inline;
+		margin-left: 5%;
+		font-family: $fontstack;
+		font-size: $font-sizethree;
+		color:$font-color;
+
+		.octicon{
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+
+	li:hover{
+		color:$font-colortwo;
+	}
+}
+		
+
+
+#bothsections{
+	margin-left: 33%;
+	margin-top: -36%;
+
+	.sectionone{
+	margin-left:-17%;
+	margin-top: 4%;
+	width: 90%;
+	}
+
+	.sectiontwohidden {display:none;}
+	.sectiontwo{
+	// display:none;
+	margin-left:-17%;
+	margin-top: -2%;
+	width: 90%;
+	padding-top: 0;
+		}
+	}
+
+
+//*sectionone repo*//
+.therepocss{
+
+	.namerepo{
+		margin-top: 20px;
+		margin-bottom: 0;
+
+		a {
+			text-decoration: none;
+			font-family: $fontstack;
+			color: $font-colortwo;
+			font-size: $font-sizethree;
+			margin-left: 16px;
+			font-weight: 700;
+
+		}
+		a:hover{
+			text-decoration: underline
+		}
+
+		.bookimage{
+			height: 30px;
+			width: 20px;
+			padding-top: 10px;
+		}
+	}
+
+	.updatedrepo{
+		margin-bottom: 20px;
+		margin-top: 4px;
+		margin-left: 40px;
+		a {
+			text-decoration: none;
+			font-family: $fontstack;
+			font-size: bold, $font-sizefour;
+			color: $font-colorthree;
+			}
+	}
+
+	.therepocssright{
+		position: absolute;
+		margin-left: 45%;
+		margin-top: -5%;
+		word-spacing: 10px;
+
+
+		.octicon{
+				 margin-right: 1px;
+				 color: $font-colorfour;
+				}
+		.octicon:hover{
+			color: $font-colortwo;
+		}
+
+
+
+		a {
+			text-decoration: none;
+			font-family: $fontstack;
+			color: $font-colorfour;
+			font-size: $font-sizefive;
+			font-weight: 700;
+			}
+
+		a:hover{
+			color: $font-colortwo;
+			}
+
+	}	
+}
+
+//*sectiontwo*//
+.theeventscss{
+
+		hr {
+			color: #666;
+			opacity: .1;
+			margin-bottom: 20px;
+		}
+
+		font-family: $fontstack;
+		font-family: $fontstack;
+		color: $font-colortwo;
+		font-size: $font-sizesix;
+		margin-left: 4px;
+		margin-right: 4px;
+		font-weight: 550;
+		display: block;
+		margin-top: 4%;
+
+		p{
+			font-family: $fontstack;
+		font-family: $fontstack;
+		color: $font-colorfour;
+		font-size: $font-sizesix;
+		margin-left: 8px;
+		margin-right: -1px;
+		font-weight: 550;
+		display: inline;
+		margin-top: 4%
+
+		}
+
+		.type {
+		color: $font-colorfour;
+		}
+
+		a{
+		text-decoration: none;
+		margin-left: 7px;
+		}	
+	}
+				
+
+
+
+
+//*Everything in the Aside*//
+
+	aside{
+		width: 80%;
+
+		img{
+			width: 220px;
+			height: 220px;
+			border-radius: 10%;
+			margin-left: 4px;
+			}
+
+		 .loginasside h2 {
+			font-family: $fontstack;
+			margin-left: 10px;
+			font-weight: 100;
+			color: $font-color;
+			}
+
+		.createdasside h4{
+			margin-left: 7px;
+			font-weight: 100;
+			font-family: $fontstack;
+			color: $font-color;
+
+
+			.octicon{
+				 margin-right: 10px;
+
+			}
+		}
+
+		.loginasside h2 {
+			font-size: $font-sizeone;
+			color: $font-color;
+			}
+
+		h3{
+			display: inline-block;
+			word-spacing: 25px;
+			margin-left: -2px;
+			color: $font-color;
+			font-size: $font-sizetwo;
+			font-family: $fontstack;
+			margin-top: 0;
+			margin-bottom: 0;
+
+
+		}
+
+		h3:hover, p:hover{
+			color: $font-colortwo;
+		}
+
+
+
+		.starredasside p, .followingaside p, .followersaside p {
+			display: block;
+			margin-top: 0;
+			padding-top: 0;
+			font-family: $fontstack;
+			margin-left: -2px;
+			font-weight: 200;
+
+		}
+
+	}
+
+	.Organieasside {
+
+		.orgimage {
+		height: 40px; 
+		width: 40px; 
+		margin-left: 2px;
+		border-radius: 10px;
+		}
+
+		h5{
+		font-size: 1.5em;
+		font-family: $fontstack;
+		margin-left: 5px;
+		margin-bottom: 10px;
+		}	
+			}
+
+	.assidenumbers{
+
+		margin-top: 3px;
+		margin-left: 1%;
+
+		.followersaside, .followingaside, .starredasside{
+			display: inline-block;
+			margin-left: 8px;
+	
+			}
+	}
+
+
+
+
+//*footer begins*//
+footer{
+
+	font-family: $fontstack;
+	margin-top: 8%;
+	margin-bottom: 2%;
+	width: 1300px;
+	margin-left: 10%;
+	border-top-color-weight: solid, $font-colorfour, 90;
+
+
+	ul{
+		margin-bottom: 10%;
+	}
+
+	.octicon{
+		margin-left: 15%;
+
+	}
+
+	
+
+	.leftfooter{
+
+		margin-left: 2%;
+		display: inline;
+		
+		
+
+		li{
+			display: inline;
+			margin-left: 13px;
+		}
+
+		 li a{
+			text-decoration: none;
+			list-style-type: none;
+			color: $font-colorfour;
+			
+			}
+
+
+		 li a:hover{
+		color: $font-colortwo;
+			}
+		}
+
+	.rightfooter{
+		margin-left: 13%;
+		display: inline;
+		
+		li{
+			display: inline;
+			margin-left: 13px;
+		}
+
+
+		li a{
+			text-decoration: none;
+			list-style-type: none;
+			color: $font-colorfour;
+			
+			}
+
+
+		li a:hover{
+		color: $font-colortwo;
+			}
+
+		}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
