@@ -10,15 +10,92 @@ $font-colortwo: #4183c4;
 $font-colorthree: #999999;
 $font-colorfour: #666;
 
-
+body{
+	margin: 0;
+}
 
 #container{
 	position: relative;
 	}
 
-header{
+header div {
+	
+	
+
+  padding:10px;
+  background:#eee;
+  width: 99%;
+  margin:0px auto;
+  display: inline-flex;
+
+  .octiconocticon-mark-github{
+  	margin-top: -15px;
+		margin-right: 11px;
+		margin-left: 8px;
+  }
+
+  .octicon {
+		margin-top: 9px;
+		margin-right: 11px;
+		margin-left: 8px;
+	}
+
+	ul{
+			margin-left: -3%;
+			margin-top: 25px;
+			width: 300px;
+		
+
+	}
+
+	ul a{
+		list-style: none;
+		margin-left: 8%;
+		font-family: $fontstack;
+		font-size: $font-sizethree;
+		color:$font-colorthree;
+		text-decoration: none;
+
+		li {
+			display: inline;
+		}
+	}
+
+	ul a:hover{
+		color:$font-colortwo;
+	}
+
+  button {
+  padding:1px;
+  height: 30.5px;
+  margin-top: 1%;
+}
+
+input[type=text] {
+   width: 139px;
+	height: 20px;
+	margin-top: 1%;
+  outline:none;
+  padding:5px;
+  border:solid 1px #b6b6b6;
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; 
+}
+
+input[type=text]:focus {
+    width:200px;
+}
+
+}
+
+
+
+
+.thescripts header{
 	background-color:$font-colorfour;
-	height: 10%;
+	height: 30%;
 }
 
 .repotitle{
@@ -190,8 +267,12 @@ header{
 
 //*Everything in the Aside*//
 
+#assideall{
+	margin-left: 4px;
+}
+
 	aside{
-		width: 80%;
+		width: 18.5%;
 
 		img{
 			width: 220px;

@@ -29,6 +29,8 @@
 
 }
 .mega-octicon {
+  margin-right: 16px;
+  margin-top: 15px;
   font: normal normal 32px octicons;
   line-height: 1;
   display: inline-block;
@@ -194,7 +196,8 @@
 .octicon-primitive-square:before { content: '\f053'} /*  */
 .octicon-pulse:before { content: '\f085'} /*  */
 .octicon-puzzle:before { content: '\f0c0'} /*  */
-.octicon-question:before { content: '\f02c'} /*  */
+.octicon-question:before { content: '\f02c';
+margin-right: 3px;} /*  */
 .octicon-quote:before { content: '\f063'} /*  */
 .octicon-radio-tower:before { content: '\f030'} /*  */
 .octicon-repo-delete:before,

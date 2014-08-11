@@ -20,10 +20,11 @@
 		<strong><h2><%=element.login %></h2>
 		</div>
 
-
+		<hr>
 		<a href= "<%= element.repos_url %>"><%=element.repos_url %></a>
 		
 		<div class= "assidenumbers">
+		
 			<div class="createdasside">
 				<h4><span class="octicon octicon-clock"></span><%=element.created_at%></h4>
 			</div>
@@ -34,6 +35,7 @@
 
 			<div class="followingaside">
 				<a href="https://github.com/chinenyem/following"><h3><%=element.following %></h3><p>Following</p></a>
+
 			</div>
 
 			<div class="starredasside">
@@ -41,8 +43,9 @@
 			</div>
 
 		</div>
-		
+		<hr>
 			<div class="Organieasside">
+
 				<h5>Organization</h5>
 				<a href ="<%=element.organization_url%>"<%=element.organization_url %></a>
 				<img src= "images/org.png" class="orgimage">
@@ -101,7 +104,16 @@
 
 <body>
 <header>
-	<submit>Name</submit>
+	<div>
+	<span class="mega-octicon octicon-mark-github"></span>
+	<input type="text" placeholder="Search or type a command"/>
+ 	 <button><span class="octicon octicon-question"></span></button>
+ 	 <ul class="buttonlist">
+ 	 	<a href=""><li>Explore</li></a>
+ 	 	<a href=""><li>Gist</li></a>
+ 	 	<a href=""><li>Blog</li></a>
+ 	 	<a href=""><li>Help</li></a>
+	</div>
 
 </header>
 
